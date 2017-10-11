@@ -1,0 +1,15 @@
+* {
+    margin: 0 auto;
+}
+#head {
+    padding-bottom: 100px;
+    padding-left: 600px
+}
+#playingField {
+    width: 700px;
+    height: 700px;
+}
+canvas {
+    border: 1px solid black;
+}
+
