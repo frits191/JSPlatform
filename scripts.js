@@ -6,7 +6,7 @@ var simpleLevelPlan = [
     "xxxxxxxx    o o                             xxx     xxx        x",
     "x         xxxxxxxxxxxxxxxxxxxxxxxxx   xxx                      x",
     "x                              x                               x",
-    "x     x                   xx   x              xxxx             x",
+    "x     x                   xx   x              xxxxxxxxxx       x",
     "x     xxx  xxxxxxxxxxx  xxxxxxxx   xxxxx                       x",
     "x                x             x       x                       x",
     "x                x             x       x                       x",
@@ -154,23 +154,38 @@ function draw() {
         //    player.y += 5;
         //}
     }
-    if (!jumping && (!hasCollided("down"))) {
+    if (Direction === "") {
         //TODO: Add gravity
-        player.y += 5;
+        if (!hasCollided("down")) {
+            player.y += 5;
+        }
     }
 }
 
 function hasCollided(direction) {
     for (var index = 0; index < tile_array.length; index++)
     {
-        var hit;
-        if (direction === "left" || direction === "right" || direction === "up") {
-            hit = collideRectRect(player.x, player.y - 2, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
-        } else {
-            hit = collideRectRect(player.x, player.y, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
+        if (direction === "left" || direction === "right" || direction === "up" || direction === "down") {
+            var hit1 = collideRectRect(player.x, player.y, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
+        }
+        var hit2 = collideRectRect(player.x, player.y, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
+
+        if (hit1 && !hit2) {
+            //Normal hit no down
+            console.log(direction);
+            Direction = "";
+            return true;
         }
 
-        if (hit) {
+        if (hit1 && hit2) {
+            //Hit with down
+            console.log(direction + " down");
+            Direction = "down";
+            return true;
+        }
+
+        /*
+        if (hit1) {
             if (first_hit) {
                 Direction = direction;
                 prevSide = direction;
@@ -179,12 +194,12 @@ function hasCollided(direction) {
             console.log(prevSide + direction);
             if (direction === prevSide) {
                 return true;
-            } else if (direction === "down" || direction === "up" ) {
+            } else if (direction === "up") {
                 return true;
             }
         } else {
             Direction = "";
-        }
+        } */
     }
     first_hit = true;
     return false;
