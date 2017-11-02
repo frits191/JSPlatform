@@ -1,3 +1,5 @@
+//JQUERY
+
 var simpleLevelPlan = [
     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "x                      x                                       x",
@@ -9,19 +11,19 @@ var simpleLevelPlan = [
     "x     x                   xx   x              xxxxxxxxxx       x",
     "x     xxx  xxxxxxxxxxx  xxxxxxxx   xxxxx                       x",
     "x                x             x       x                       x",
+    "x                x             x       xxxxxxxxx               x",
+    "x          xxxxxxx             xxxx    x                       x",
     "x                x             x       x                       x",
-    "x                x             xxxx    x                       x",
     "x                x             x       x                       x",
-    "x                x             x     xxx                       x",
-    "x                x             x                               x",
+    "x                x             x    xxxx             xxxxxxxxxxx",
     "x                              x                               x",
-    "x                              x                               x",
+    "x     xxxxxx                   x                               x",
     "x                      x       x                               x",
-    "x                      x       x                               x",
+    "x                      x       x               xxxxxx    xxxxxxx",
     "x     oo               x     = x                               x",
-    "x    xxx    o o        x       x                               x",
+    "x    xxx    o o        x       xxxxxxx                         x",
     "x           xxxxxxxxxxxxxx   xxx                               x",
-    "x                              x                               x",
+    "x                              x        xxx   xxx              x",
     "x     x                   xx   x                               x",
     "x     xxx  xxxxxxxxxxx  xxxxxxxx                               x",
     "x                x             x                               x",
@@ -87,7 +89,6 @@ function drawLevel() {
     {
         var array = simpleLevelPlan[i].split("");
         x = 0;
-
         for (var l = 0; l < array.length; l++)
         {
             if (array[l] === " ") {
@@ -134,77 +135,64 @@ function draw() {
         if (!hasCollided("left")) {
             player.x -= 10;
         }
-    } else if (keyIsDown(RIGHT_ARROW)) {
+    }
+    if (keyIsDown(RIGHT_ARROW)) {
         if (!hasCollided("right")) {
             player.x += 10;
         }
-    } else if (keyIsDown(UP_ARROW)) {
-        if (!hasCollided("up")) {
-            for (var i = 0; i < 50; i++) {
-                //y = -Math.pow(2, 2) + 10;
-                console.log(player.y);
-                //player.y = Math.pow(2, -i) + player.y;
-            }
-            //if (hasCollided("down") || hasCollided("up") || hasCollided("right") || hasCollided("left")) {
-              //  return;
-            //}
-        }
-    } else if (keyIsDown(DOWN_ARROW)) {
-        //if (!hasCollided("down")) {
-        //    player.y += 5;
-        //}
     }
-    if (Direction === "") {
-        //TODO: Add gravity
-        if (!hasCollided("down")) {
-            player.y += 5;
+    if (keyIsDown(UP_ARROW)) {
+        if (jumping === false) {
+            jumping = true;
+            for (var i = 0; i < 2; i++) {
+                if (!hasCollided("up")) {
+                    player.y -= 10;
+                }
+            }
+            jumping = false;
         }
+    }
+    if (!jumping && !hasCollided("down")) {
+        player.y += 5;
     }
 }
 
 function hasCollided(direction) {
     for (var index = 0; index < tile_array.length; index++)
     {
-        if (direction === "left" || direction === "right" || direction === "up" || direction === "down") {
-            var hit1 = collideRectRect(player.x, player.y, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
+        var hit1;
+        var hit2 = false;
+
+        if (direction === "left") {
+            hit1 = collideRectRect(player.x - 10, player.y - 5, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
+        } else if ( direction === "right" ) {
+            hit1 = collideRectRect(player.x + 10, player.y - 10, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
+        //} else if (direction === "up") {
+            //hit1 = collideRectRect(player.x, player.y - 10, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
+        } else if (direction === "down") {
+            hit2 = collideRectRect(player.x , player.y , 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
+            if (hit2) {
+                return hit2;
+            }
+            hit1 = collideRectRect(player.x + 10, player.y - 10, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
         }
-        var hit2 = collideRectRect(player.x, player.y, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
+
+        hit2 = collideRectRect(player.x, player.y + 10, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
 
         if (hit1 && !hit2) {
             //Normal hit no down
-            console.log(direction);
+            //console.log(direction);
             Direction = "";
             return true;
         }
 
         if (hit1 && hit2) {
             //Hit with down
-            console.log(direction + " down");
+            //console.log(direction + " down");
             Direction = "down";
             return true;
         }
-
-        /*
-        if (hit1) {
-            if (first_hit) {
-                Direction = direction;
-                prevSide = direction;
-                first_hit = false;
-            }
-            console.log(prevSide + direction);
-            if (direction === prevSide) {
-                return true;
-            } else if (direction === "up") {
-                return true;
-            }
-        } else {
-            Direction = "";
-        } */
     }
     first_hit = true;
     return false;
-}
-
-function keyPressed() {
-
 }
