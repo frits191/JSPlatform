@@ -12,4 +12,60 @@
 canvas {
     border: 1px solid black;
 }
+.score {
+    position: absolute;
+    left: 100px;
+    font-size: 18px;
+}
+.lives {
+    position: absolute;
+    left: 25px;
+    font-size: 18px;
+}
+.title {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    font-size: 50px;
+}
+.yes {
+    position: absolute;
+    top: 370px;
+    left: 300px;
+    font-size: 50px;
+}
+.yes:hover {
+    color: darkgrey;
+    cursor: pointer;
+}
+.easy {
+    position: absolute;
+    top: 370px;
+    left: 300px;
+    font-size: 50px;
+}
+.easy:hover {
+    color: darkgrey;
+    cursor: pointer;
+}
+.medium {
+    position: absolute;
+    top: 370px;
+    left: 450px;
+    font-size: 50px;
+}
+.medium:hover {
+    color: darkgrey;
+    cursor: pointer;
+}
+.hard {
+    position: absolute;
+    top: 370px;
+    left: 650px;
+    font-size: 50px;
+}
+.hard:hover {
+    color: darkgrey;
+    cursor: pointer;
+}
 
