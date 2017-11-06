@@ -6,25 +6,25 @@ $( function() {
 
 var easy = [
     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    "x              333    2x       2x                             2x",
-    "x                     2x       2x                             2x",
-    "x  @  oo                                            111       2x",
-    "xxxxxxxx      oo           x                xxx     xxx       2x",
-    "x33          xxxxxxxxxxxxxxxxxxxxxx   xxx                     2x",
-    "x                              x                              2x",
+    "x              333    2x       2x                              x",
+    "x                     2x       2x                              x",
+    "x  @  oo                                            111        x",
+    "xxxxxxxx      oo           x                xxx     xxx        x",
+    "x            xxxxxxxxxxxxxxxxxxxxxx   xxx                      x",
+    "x                              x                               x",
     "x                              x      11      xxxxxxxxxx       x",
     "x    xxx  2xxxxxxxxxxx    xxxxxx   xxxxx                       x",
-    "x                x            2x      2x                       x",
-    "x4               x            2x o     xxxxxxxxx      xxxxxxxxxx",
-    "x4         xxxxxxx    2x      2xxxx    x4                      x",
-    "x4               x    2x      2x       x                       x",
-    "x4               x    2x   oo 2x     o x                       x",
-    "x4               x    2x   x  2x    xxxx   xxxxx     xxxxxxxxxxx",
-    "x                             2x           33333     3333333333x",
-    "x     xxxxxx                  2x                               x",
-    "x                     2x      2x                 oo            x",
-    "x                     2x      2x               xxxxxx    xxxxxxx",
-    "x     oo               x      2x111                            x",
+    "x                x             x      2x                       x",
+    "x                x             x o     xxxxxxxxx      xxxxxxxxxx",
+    "x4         xxxxxxx    2x       xxxx    x4                      x",
+    "x4               x    2x       x       x                       x",
+    "x4               x     x   oo 2x     o x                       x",
+    "x                x     x   x  2x    xxxx   xxxxx     xxxxxxxxxxx",
+    "x                             2x           33333            333x",
+    "x     xxxxxx                   x                               x",
+    "x                     2x       x                 oo            x",
+    "x                     2x       x               xxxxxx    xxxxxxx",
+    "x     oo               x       x111                            x",
     "x    xxx               x       xxxxxxx                         x",
     "x           xxxxxxxxxxxxxx   xxx                               x",
     "x                             2x        xxx   xxx              x",
@@ -32,15 +32,15 @@ var easy = [
     "x     xxx  xxxxxxxxxx    xxxxxxx                    xxxxxxxxxxxx",
     "x                x4                      oo         x333       x",
     "x                x4                     xxxxxxx     x          x",
-    "xxxxxx           x4                                 x       oo x",
+    "xxxxxx           x                        333       x       oo x",
     "x4               x     xxxxxxxxx                    x      xxxxx",
     "x4               x             x                               x",
     "x4               x             x                               x",
     "x4                                  xxxxx       xxx     xxxxxxxxx",
-    "x4   xxxxxxxx                                                  x",
-    "x4                     x                                       x",
-    "x                      x                                       x",
-    "x                      x            xxxxxxxxxxxxx        xxxxxxx",
+    "x4   xxxxxxxx                                    x             x",
+    "x4                     x                         x             x",
+    "x                      x                         x             x",
+    "x                      x            xxxxxxxxxxxxxx       xxxxxxx",
     "x    xxx            oo x     11            x4                  x",
     "x           xxxxxxxxxxxx     xx            x4                  x",
     "x                            33            x4                  x",
@@ -56,49 +56,49 @@ var easy = [
 ];
 var medium = [
     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    "x              333    2x       2x                             2x",
-    "x                     2x       2x                             2x",
-    "x  @  oo                                            111       2x",
-    "xxxxxxxx      oo           x                xxx     xxx       2x",
+    "x                    x                                        2x",
+    "x                    3                                        2x",
+    "x  @                                                111       2x",
+    "xxxxxxxx      oo 11        x     1          xxx     xxx       2x",
     "x33          xxxxxxxxxxxxxxxxxxxxxx   xxx                     2x",
     "x                              x                              2x",
-    "x                              x      11      xxxxxxxxxx       x",
-    "x    xxx  2xxxxxxxxxxx    xxxxxx   xxxxx                       x",
-    "x                x            2x      2x                       x",
-    "x4               x            2x o     xxxxxxxxx      xxxxxxxxxx",
-    "x4         xxxxxxx    2x      2xxxx    x4                      x",
-    "x4               x    2x      2x       x                       x",
+    "x                              x       1      xxxxxxxxxx       x",
+    "x         2xxxxxxxxxxx    xxxxxx      2x                       x",
+    "x         2x                  2x      2x                       x",
+    "x4        2x                  2x o    2xxxxxxxxx      xxxxxxxxxx",
+    "x4   xx   2xxxxxxx    2x      2xxx    2x4                      x",
+    "x4               x    2x      2x      2x                       x",
     "x4               x    2x   oo 2x     o x                       x",
-    "x4               x    2x   x  2x    xxxx   xxxxx     xxxxxxxxxxx",
+    "x4     2xxx4     x    2x   x  2x    xxxx   xxxxx     xxxxxxxxxxx",
     "x                             2x           33333     3333333333x",
-    "x     xxxxxx                  2x                               x",
-    "x                     2x      2x                 oo            x",
-    "x                     2x      2x               xxxxxx    xxxxxxx",
-    "x     oo               x      2x111                            x",
-    "x    xxx               x       xxxxxxx                         x",
-    "x           xxxxxxxxxxxxxx   xxx                               x",
-    "x                             2x        xxx   xxx              x",
+    "x                             2x                               x",
+    "x                     2x      2x              x  oo            x",
+    "x                     2x      2x              xxxxxxx    xxxxxxx",
+    "x                     2x      2x1111                           x",
+    "x    xxx     oo       2x       xxxxxxx                         x",
+    "x           xxxxx    xxxxx   xxx                               x",
+    "x                             2x        xxx4 2xxx              x",
     "x     x                       2x                               x",
-    "x     xxx  xxxxxxxxxx    xxxxxxx                    xxxxxxxxxxxx",
-    "x                x4                      oo         x333       x",
+    "x     xx   xxxxxxxxxx    xxxxxxx                    xxxxxxxxxxxx",
+    "x           33333x4                      oo  11     x333       x",
     "x                x4                     xxxxxxx     x          x",
-    "xxxxxx           x4                                 x       oo x",
+    "xxxxxx           x4       111              333      x       oo x",
     "x4               x     xxxxxxxxx                    x      xxxxx",
-    "x4               x             x                               x",
-    "x4               x             x                               x",
-    "x4                                  xxxxx       xxx     xxxxxxxxx",
-    "x4   xxxxxxxx                                                  x",
-    "x4                     x                                       x",
-    "x                      x                                       x",
+    "x4               x            2x      xxxxxxx                  x",
+    "x4               x            2x      x                        x",
+    "x4                            2x    xxx        xxx     xxxxxxxxx",
+    "x4   xxxxxxxx                  x                               x",
+    "x4                     x4      x                               x",
+    "x                      x4                   111                x",
     "x                      x            xxxxxxxxxxxxx        xxxxxxx",
     "x    xxx            oo x     11            x4                  x",
     "x           xxxxxxxxxxxx     xx            x4                  x",
     "x                            33            x4                  x",
     "x     x4                          oo       x4                  x",
-    "x     xxx  xxxxxxxxxxx  xxxxxxx  xxx    xxxxxxxxxxx            x",
+    "x     xxx  xxxxxxxxxxx  xxxxxxx  xxx    xxxxxxxxxxx      xxxxxxx",
+    "x                x                           3333         33333x",
     "x                x                                             x",
-    "x                x                                             x",
-    "x                x                                             x",
+    "x                x                                          =  x",
     "x                x                   xxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "x                x                                             x",
     "x                x                                             x",
@@ -106,50 +106,50 @@ var medium = [
 ];
 var hard = [
     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    "x              333    2x       2x                             2x",
-    "x                     2x       2x                             2x",
+    "x              333    2x4      2x                             2x",
+    "x                     2x4      2x                             2x",
     "x  @  oo                                            111       2x",
-    "xxxxxxxx      oo           x                xxx     xxx       2x",
-    "x33          xxxxxxxxxxxxxxxxxxxxxx   xxx                     2x",
-    "x                              x                              2x",
-    "x                              x      11      xxxxxxxxxx       x",
-    "x    xxx  2xxxxxxxxxxx    xxxxxx   xxxxx                       x",
-    "x                x            2x      2x                       x",
-    "x4               x            2x o     xxxxxxxxx      xxxxxxxxxx",
-    "x4         xxxxxxx    2x      2xxxx    x4                      x",
-    "x4               x    2x      2x       x                       x",
-    "x4               x    2x   oo 2x     o x                       x",
-    "x4               x    2x   x  2x    xxxx   xxxxx     xxxxxxxxxxx",
-    "x                             2x           33333     3333333333x",
-    "x     xxxxxx                  2x                               x",
-    "x                     2x      2x                 oo            x",
-    "x                     2x      2x               xxxxxx    xxxxxxx",
-    "x     oo               x      2x111                            x",
-    "x    xxx               x       xxxxxxx                         x",
+    "xxxxxxxx      oo           x                xxxxxxxxxxx       2x",
+    "x33          xxxxxxxxxxxxxxxxxxxxxx   xxx           333       2x",
+    "x                          3332x                         oo   2x",
+    "x                             2x111111        xxxxxxxxxx       x",
+    "x    xxx  2xxxxxxxxxxx    xxxxxxxxxxxxxx                       x",
+    "x                x            2x                               x",
+    "x4               x            2x11     xxxxxxxxx     2xxxxxxxxxx",
+    "x4         xxxxxxx    2x4     2xxx     x4                      x",
+    "x4               x    2x      2x       x4                      x",
+    "x4               x    2x   oo 2x       x4              x       x",
+    "x4         x4    x    2x   x  2x    xxxx   xxxxx     xxxxxxxxxxx",
+    "x          x4                 2x           33333     3333333333x",
+    "x     xxxxxx4                 2x     oo  x                     x",
+    "x                     2x4     2x         x       oo            x",
+    "x                     2x4     2x         x     xxxxxx    xxxxxxx",
+    "x     oo               x4     2x111      x                     x",
+    "x    xxx      oo       x4      xxxxxxx   x                     x",
     "x           xxxxxxxxxxxxxx   xxx                               x",
     "x                             2x        xxx   xxx              x",
     "x     x                       2x                               x",
-    "x     xxx  xxxxxxxxxx    xxxxxxx                    xxxxxxxxxxxx",
-    "x                x4                      oo         x333       x",
-    "x                x4                     xxxxxxx     x          x",
-    "xxxxxx           x4                                 x       oo x",
-    "x4               x     xxxxxxxxx                    x      xxxxx",
-    "x4               x             x                               x",
-    "x4               x             x                               x",
-    "x4                                  xxxxx       xxx     xxxxxxxxx",
-    "x4   xxxxxxxx                                                  x",
-    "x4                     x                                       x",
-    "x                      x                                       x",
+    "x     xxx        xxxx    xxxxxxx                    xxxxxxxxxxxx",
+    "x                x4         333    x4    oo         x333       x",
+    "x                x4                x4    xxxxxx     x          x",
+    "xxxxxx     x     x4                x4    x333       x       oo x",
+    "x4         x     x     xxxxxxxxx         x          x      xxxxx",
+    "x4         x                  2x         x                     x",
+    "x4         x                  2x     1111x                     x",
+    "x4         x                  2x    xxxxxx     xxx     xxxxxxxxx",
+    "x4   xxxxxxxx                 2x                               x",
+    "x4                     x4     2x       oo                      x",
+    "x                      x4                                      x",
     "x                      x            xxxxxxxxxxxxx        xxxxxxx",
-    "x    xxx            oo x     11            x4                  x",
-    "x           xxxxxxxxxxxx     xx            x4                  x",
-    "x                            33            x4                  x",
-    "x     x4                          oo       x4                  x",
-    "x     xxx  xxxxxxxxxxx  xxxxxxx  xxx    xxxxxxxxxxx            x",
-    "x                x                                             x",
-    "x                x                                             x",
-    "x                x                                             x",
-    "x                x                   xxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "x    xxx            oo x     11            x4                 2x",
+    "x           xxxxxxxxxxxx     xx            x4                 2x",
+    "x                            33            x4                 2x",
+    "x     x4                          oo       x4                 2x",
+    "x     xxx  xxxxxxxxxxx  xxxxxxx  xxx    xxxxxxxxxxx           2x",
+    "x          x     x4                       3333333              x",
+    "x          x     x4         111                                x",
+    "x          x     x4         xxx                             =  x",
+    "x      xxxxx     x4                  xxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "x                x                                             x",
     "x                x                                             x",
     "x!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!x"
@@ -184,7 +184,7 @@ var jumping = false;
 var gameOver = false;
 var selection = "";
 
-var initialSetup = true;
+var initialSetup = false;
 
 function Tile(x, y) {
     this.x = x;
@@ -218,6 +218,7 @@ function start(select) {
     player.x = 0;
     player.y = 0;
     selection = select;
+    initialSetup = false;
     $ ( ".GameOver" ).html("");
 }
 
@@ -271,7 +272,7 @@ function drawLevel() {
                 }
             } else if (array[l] === "o") {
                 //Coin tile
-                if (initialSetup) {
+                if (!initialSetup) {
                     var c = new Coin(x, y);
                     coin_array.push(c);
 
@@ -280,7 +281,8 @@ function drawLevel() {
                 }
             } else if (array[l] === "=") {
                 //Player Finish
-                endTile(x, y);
+                endTile.x = x;
+                endTile.y = y;
                 fill(colors.endTile);
                 ellipse(x, y, 10, 10);
             } else if (array[l] === "1") {
@@ -313,13 +315,13 @@ function drawLevel() {
         y = y + 25;
     }
 
-    if (!initialSetup) {
+    if (initialSetup) {
         fill(colors.coin);
         for (var m = 0;m < coin_array.length; m++) {
             ellipse(coin_array[m].x, coin_array[m].y, 15, 15);
         }
     }
-    initialSetup = false;
+    initialSetup = true;
 }
 
 function draw() {
@@ -336,7 +338,7 @@ function draw() {
     if (hasCollided("spike")) {
         if (lives > 0) {
             lives--;
-            initialSetup = false;
+            //initialSetup = false;
             player.x = 0;
             player.y = 0;
             playerIsSet = false;
@@ -350,7 +352,7 @@ function draw() {
     if (hasCollided("lava")) {
         if (lives > 0) {
             lives--;
-            initialSetup = false;
+            //initialSetup = false;
             player.x = 0;
             player.y = 0;
             playerIsSet = false;
@@ -362,11 +364,12 @@ function draw() {
         }
     }
     if (hasCollided("ending")) {
-        initialSetup = false;
-        player.x = 0;
-        player.y = 0;
+        initialSetup = true;
+        player.x = -250;
+        player.y = -250;
         playerIsSet = false;
         selection = "";
+        coin_array = [];
         drawLevel();
         $ ( ".GameOver" ).html("<div class='title'><h2>Welcome to JSPLATFORM!</h2>Choose a level</div><div class='easy' onclick='start(\"easy\")'>Easy</div><div class='medium' onclick='start(\"medium\")'>Medium</div><div class='hard' onclick='start(\"hard\")'>Hard</div>");
     }
@@ -445,11 +448,11 @@ function hasCollided(direction) {
         } else if (direction === "up") {
             hit1 = collideRectRect(player.x, player.y - 12, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
         } else if (direction === "down") {
-            hit2 = collideRectRect(player.x , player.y , 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
+            hit2 = collideRectRect(player.x , player.y , 25, 25, tile_array[index].x, tile_array[index].y, 25, 25);
             if (hit2) {
                 return hit2;
             }
-            hit1 = collideRectRect(player.x + 10, player.y, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);
+            hit1 = collideRectRect(player.x + 10, player.y, 25, 25, tile_array[index].x, tile_array[index].y, 25, 25);
         }
 
         hit2 = collideRectRect(player.x, player.y + 10, 25, 25, tile_array[index].x, tile_array[index].y, 24, 24);

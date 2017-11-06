@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/scripts.js" line="274" />
+    <bookmark url="file://$PROJECT_DIR$/scripts.js" line="275" />
+    <bookmark url="file://$PROJECT_DIR$/scripts.js" line="33" />
+    <bookmark url="file://$PROJECT_DIR$/scripts.js" line="97" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="812b1850-43d1-4c1e-b0f1-fbcbc3b8b336" name="Default" comment="" />
@@ -30,8 +32,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="436" column="5" lean-forward="true" selection-start-line="436" selection-start-column="5" selection-end-line="436" selection-end-column="5" />
+            <state relative-caret-position="612">
+              <caret line="142" column="71" lean-forward="true" selection-start-line="142" selection-start-column="71" selection-end-line="142" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -62,6 +64,7 @@
     <findStrings>
       <find>console</find>
       <find>prevSide</find>
+      <find>initialSetup</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,12 +179,12 @@
       <workItem from="1507549108320" duration="9344000" />
       <workItem from="1508147365131" duration="4290000" />
       <workItem from="1508158798582" duration="4471000" />
-      <workItem from="1509825299291" duration="20871000" />
+      <workItem from="1509825299291" duration="24712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101440000" />
+    <option name="totallyTimeSpent" value="105281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -599,8 +602,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="436" column="5" lean-forward="true" selection-start-line="436" selection-start-column="5" selection-end-line="436" selection-end-column="5" />
+        <state relative-caret-position="612">
+          <caret line="142" column="71" lean-forward="true" selection-start-line="142" selection-start-column="71" selection-end-line="142" selection-end-column="71" />
           <folding />
         </state>
       </provider>
